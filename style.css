@@ -690,3 +690,36 @@ position:relative;
 z-index:2;
 }
 
+.logo{
+display:flex;
+align-items:center;
+}
+
+.logo img{
+height:85px;
+width:auto;
+
+/* NEW */
+background: rgba(255,255,255,0.95);
+padding:8px 12px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo img{
+height:85px;
+background:white;
+padding:10px 16px;
+border-radius:10px;
+}
+
+.logo img{
+height:70px;
+width:auto;
+
+background: rgba(255,255,255,0.95);
+padding:6px 10px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
