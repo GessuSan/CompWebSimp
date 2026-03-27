@@ -57,6 +57,22 @@ margin-bottom:10px;
 margin-top:20px;
 }
 
+/* ✅ FIXED BUTTON STYLE */
+.detail-btn{
+margin-left:10px;
+padding:6px 12px;
+border:none;
+background:#0b1f4b;
+color:#fff;
+border-radius:6px;
+cursor:pointer;
+font-size:12px;
+}
+
+.detail-btn:hover{
+opacity:0.85;
+}
+
 .desc{
 margin-top:10px;
 font-size:14px;
@@ -114,9 +130,7 @@ grid-template-columns:1fr;
 <h3>Active Projects</h3>
 
 <h4>DEBHUB (BASARNAS)</h4>
-<ul>
-<li>Radar Terminal ATLUT</li>
-</ul>
+<ul><li>Radar Terminal ATLUT</li></ul>
 <div class="progress"><div class="fill" style="width:65%">65%</div></div>
 
 <h4>PT PASIFIK SATELIT NUSANTARA</h4>
@@ -128,9 +142,7 @@ grid-template-columns:1fr;
 <div class="progress"><div class="fill" style="width:80%">80%</div></div>
 
 <h4>PT BANK MUAMALAT</h4>
-<ul>
-<li>Router Cisco</li>
-</ul>
+<ul><li>Router Cisco</li></ul>
 <div class="progress"><div class="fill" style="width:40%">40%</div></div>
 
 <h4>PT MOBILE SELULER</h4>
@@ -180,20 +192,58 @@ grid-template-columns:1fr;
 
 </div>
 
+<section class="section">
+<div class="container">
+
+<h2>Our Clients</h2>
+<p>Trusted by network operators, service providers, and government institutions</p>
+
+<!-- NETWORK OPERATORS -->
+<h3 style="margin-top:30px;">Network Operators</h3>
+<div class="logo-grid">
+<img src="Assets/TI.jpeg" alt="Telkom Indonesia">
+<img src="Assets/NI.png" alt="Indosat">
+<img src="Assets/ISO.png" alt="ISO">
+<img src="Assets/XL.png" alt="XL Axiata">
+<img src="Assets/ST.png" alt="Smartfren">
+</div>
+
+<!-- NETWORK SERVICE PROVIDERS -->
+<h3 style="margin-top:30px;">Network Service Providers</h3>
+<div class="logo-grid">
+<img src="Assets/NSN.png" alt="Nokia Siemens Network">
+<img src="Assets/HW.png" alt="Huawei">
+<img src="Assets/NEC.png" alt="NEC">
+<img src="Assets/AL.png" alt="Alcatel">
+<img src="Assets/ES.png" alt="Ericsson">
+</div>
+
+<!-- GOVERNMENT & OTHERS -->
+<h3 style="margin-top:30px;">Government Related & Others</h3>
+<div class="logo-grid">
+<img src="Assets/IA.png">
+<img src="Assets/KP.png">
+<img src="Assets/KT.png">
+<img src="Assets/SWA.png">
+<img src="Assets/DC.jpeg">
+<img src="Assets/HDP.jpeg">
+</div>
+
+</div>
+</section>
 
 <div id="history" style="display:none; margin-top:30px;">
 
 <h3>Project History</h3>
 
+<!-- ORIGINAL -->
 <div class="history-item">
-
 <h4>
 BALITBANG KEMHAN
 <button class="detail-btn" onclick="toggleProject('btk')">See Details</button>
 </h4>
 
 <div id="btk" class="project-detail">
-
 <p>
 F S L-Band Satelit<br>
 Kemadirian Satelit Pertahanan RI<br>
@@ -202,12 +252,83 @@ Desain dan Analisa Rancang Bangun Software Infra Red
 </p>
 
 <div class="image-grid">
-<img src="Assets/BTK(1).jpeg" alt="Project Image 1">
-<img src="Assets/BTK(2).jpeg" alt="Project Image 2">
+<img src="Assets/BTK(1).jpeg">
+<img src="Assets/BTK(2).jpeg">
 </div>
 
 <p class="desc">(Description Progress)</p>
+</div>
+</div>
 
+
+<!-- ADDED HISTORY -->
+
+<div class="history-item">
+<h4>LPP RRI <button class="detail-btn" onclick="toggleProject('p1')">See Details</button></h4>
+<div id="p1" style="display:none;">
+<ul><li>Pengadaan Mixer Console Studio DAB LPP RRI Jakarta Tahun Anggaran 2016</li></ul>
+<p><i>(Onsite Picture)</i></p>
+</div>
+</div>
+
+<div class="history-item">
+<h4>PT INFOKOM ELEKTRINDO <button class="detail-btn" onclick="toggleProject('p2')">See Details</button></h4>
+<div id="p2" style="display:none;">
+<ul><li>Perbaikan Spectrum Analyzer</li></ul>
+<p><i>(Onsite Picture)</i></p>
+</div>
+</div>
+
+<div class="history-item">
+<h4>PT JASNIKOM GEMANUSA <button class="detail-btn" onclick="toggleProject('p3')">See Details</button></h4>
+<div id="p3" style="display:none;">
+<ul>
+<li>Pengadaan Polycrystalline Solar Panel</li>
+<li>Perbaikan Painting Antenna Dish</li>
+</ul>
+<p><i>(Onsite Picture)</i></p>
+</div>
+</div>
+
+<div class="history-item">
+<h4>PT TELKOMINFRA <button class="detail-btn" onclick="toggleProject('p4')">See Details</button></h4>
+<div id="p4" style="display:none;">
+<ul>
+<li>Jasa Pembiayaan Operasional CDC CMIRA Area Sumatera</li>
+<li>MINI CME 7 Area Balinusra</li>
+<li>MINI CME 8 Area Balinusra</li>
+</ul>
+<p><i>(Onsite Picture)</i></p>
+</div>
+</div>
+
+<div class="history-item">
+<h4>PT INPRACOM TELESARANA <button class="detail-btn" onclick="toggleProject('p5')">See Details</button></h4>
+<div id="p5" style="display:none;">
+<ul><li>Perbaikan MITEC VSAT</li></ul>
+<p><i>(Onsite Picture)</i></p>
+</div>
+</div>
+
+<div class="history-item">
+<h4>MNC MEDIA <button class="detail-btn" onclick="toggleProject('p6')">See Details</button></h4>
+<div id="p6" style="display:none;">
+<ul><li>Instalasi Audio Studio Network MNC News Center</li></ul>
+<p><i>(Onsite Picture)</i></p>
+</div>
+</div>
+
+<div class="history-item">
+<h4>PT SAMPOERNA TI <button class="detail-btn" onclick="toggleProject('p7')">See Details</button></h4>
+<div id="p7" style="display:none;">
+<ul>
+<li>Perbaikan Modul BTS</li>
+<li>Perbaikan XCVR</li>
+<li>Rectifier & CMPA</li>
+<li>IDU & ODU</li>
+</ul>
+<p><i>(Onsite Picture)</i></p>
+</div>
 </div>
 
 </div>
@@ -218,34 +339,31 @@ Desain dan Analisa Rancang Bangun Software Infra Red
 </section>
 
 
-<!-- FOOTER -->
 <footer>
 
 <div class="container footer">
 
-  <div>
-    <h3>PT NUSATEL ARINDO GUTARA</h3>
-    <div style="display: flex; gap: 50px;"> <!-- flex to put addresses side by side -->
-      
-      <p>
-        Representative Office:<br>
-        Jl. Utan Kayu Raya No. 106<br>
-        Matraman Jakarta Timur 13120
-      </p>
+<div>
+<h3>PT NUSATEL ARINDO GUTARA</h3>
+<div style="display: flex; gap: 50px;">
+<p>
+Representative Office:<br>
+Jl. Utan Kayu Raya No. 106<br>
+Matraman Jakarta Timur 13120
+</p>
 
-      <p>
-        Workshop:<br>
-        Limus Pratama Regency Blok H No.19-20<br>
-        Cileungsi Bogor 16820
-      </p>
+<p>
+Workshop:<br>
+Limus Pratama Regency Blok H No.19-20<br>
+Cileungsi Bogor 16820
+</p>
+</div>
+</div>
 
-    </div>
-  </div>
-
-  <div>
-    <p>Phone: +62218234613</p>
-    <p>webmail: http//www.nusatelarindo.com</p>
-  </div>
+<div>
+<p>Phone: +62218234613</p>
+<p>webmail: http//www.nusatelarindo.com</p>
+</div>
 
 </div>
 

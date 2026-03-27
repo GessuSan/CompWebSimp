@@ -723,3 +723,51 @@ border-radius:8px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
+.detail-btn{
+background:#0b1f4b;
+color:#fff;
+border:none;
+padding:5px 10px;
+border-radius:5px;
+cursor:pointer;
+margin-left:10px;
+}
+
+.detail-btn:hover{
+opacity:0.8;
+}
+
+.logo-grid{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+margin-top:15px;
+align-items:center;
+}
+
+.logo-grid img{
+width:120px;
+height:80px;
+object-fit:contain;
+background:#fff;
+padding:10px;
+border:1px solid #eee;
+border-radius:8px;
+transition:0.3s;
+}
+
+/* optional but looks pro */
+.logo-grid img:hover{
+transform:scale(1.05);
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.logo-grid img{
+filter: grayscale(100%);
+opacity:0.8;
+}
+
+.logo-grid img:hover{
+filter: grayscale(0%);
+opacity:1;
+}
