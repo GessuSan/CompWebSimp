@@ -756,7 +756,6 @@ border-radius:8px;
 transition:0.3s;
 }
 
-/* optional but looks pro */
 .logo-grid img:hover{
 transform:scale(1.05);
 box-shadow:0 4px 12px rgba(0,0,0,0.1);
@@ -770,4 +769,38 @@ opacity:0.8;
 .logo-grid img:hover{
 filter: grayscale(0%);
 opacity:1;
+}
+
+#history{
+  font-size:16px;
+  line-height:1.7;
+}
+
+#history h3{
+  font-size:26px;
+  margin-bottom:15px;
+}
+
+#history h4{
+  font-size:18px;
+  margin-top:20px;
+  color:#0b1f4b;
+}
+
+.section-title{
+  font-size:20px;
+  font-weight:700;
+  margin-top:30px;
+  margin-bottom:10px;
+  border-bottom:2px solid #0b1f4b;
+  padding-bottom:5px;
+}
+
+.history-item{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  border:1px solid #eee;
+  box-shadow:0 4px 15px rgba(0,0,0,0.05);
+  margin-top:15px;
 }

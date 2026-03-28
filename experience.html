@@ -118,6 +118,8 @@ grid-template-columns:1fr;
 <h1>Project Experience</h1>
 <p>Overview of active and completed projects</p>
 
+
+
 <div style="margin-top:20px;">
 <button class="btn toggle-btn" onclick="show('active')">Active Project</button>
 <button class="btn btn-outline" onclick="show('history')">Project History</button>
@@ -192,6 +194,114 @@ grid-template-columns:1fr;
 
 </div>
 
+
+
+<div id="history" style="display:none; margin-top:30px;">
+
+<h3>Project History</h3>
+
+<h4 class="section-title">Government Projects</h4>
+
+<div class="history-item">
+<h4>
+BALITBANG KEMHAN
+<button class="detail-btn" onclick="toggleProject('btk')">See Details</button>
+</h4>
+
+<div id="btk" class="project-detail">
+<p>
+F S L-Band Satelit<br>
+Kemadirian Satelit Pertahanan RI<br>
+Pengadaan Pengintegrasian System Pengendali Rudder/FIN Pada Roket Kaliber 122 mm<br>
+Desain dan Analisa Rancang Bangun Software Infra Red
+</p>
+
+<div class="image-grid">
+<img src="Assets/BTK(1).jpeg">
+<img src="Assets/BTK(2).jpeg">
+</div>
+
+<p class="desc">(Description Progress)</p>
+</div>
+</div>
+
+
+<h4 class="section-title">Private Company Projects</h4>
+
+<div class="history-item">
+<h4>LPP RRI <button class="detail-btn" onclick="toggleProject('p1')">See Details</button></h4>
+<div id="p1" class="project-detail">
+<ul>
+<li>Pengadaan Mixer Console Studio DAB LPP RRI Jakarta Tahun Anggaran 2016</li>
+</ul>
+</div>
+</div>
+
+<div class="history-item">
+<h4>PT INFOKOM ELEKTRINDO <button class="detail-btn" onclick="toggleProject('p2')">See Details</button></h4>
+<div id="p2" class="project-detail">
+<ul>
+<li>Perbaikan Spectrum Analyzer</li>
+</ul>
+</div>
+</div>
+
+<div class="history-item">
+<h4>PT JASNIKOM GEMANUSA <button class="detail-btn" onclick="toggleProject('p3')">See Details</button></h4>
+<div id="p3" class="project-detail">
+<ul>
+<li>Pengadaan Polycrystalline Solar Panel</li>
+<li>Perbaikan Painting Antenna Dish</li>
+</ul>
+</div>
+</div>
+
+<div class="history-item">
+<h4>PT TELKOMINFRA <button class="detail-btn" onclick="toggleProject('p4')">See Details</button></h4>
+<div id="p4" class="project-detail">
+<ul>
+<li>Jasa Pembiayaan Operasional CDC CMIRA Area Sumatera</li>
+<li>MINI CME 7 Area Balinusra</li>
+<li>MINI CME 8 Area Balinusra</li>
+</ul>
+</div>
+</div>
+
+<div class="history-item">
+<h4>PT INPRACOM TELESARANA <button class="detail-btn" onclick="toggleProject('p5')">See Details</button></h4>
+<div id="p5" class="project-detail">
+<ul>
+<li>Perbaikan MITEC VSAT</li>
+</ul>
+</div>
+</div>
+
+<div class="history-item">
+<h4>MNC MEDIA <button class="detail-btn" onclick="toggleProject('p6')">See Details</button></h4>
+<div id="p6" class="project-detail">
+<ul>
+<li>Instalasi Audio Studio Network MNC News Center</li>
+</ul>
+</div>
+</div>
+
+<div class="history-item">
+<h4>PT SAMPOERNA TI <button class="detail-btn" onclick="toggleProject('p7')">See Details</button></h4>
+<div id="p7" class="project-detail">
+<ul>
+<li>Perbaikan Modul BTS</li>
+<li>Perbaikan XCVR</li>
+<li>Rectifier & CMPA</li>
+<li>IDU & ODU</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
 <section class="section">
 <div class="container">
 
@@ -231,113 +341,6 @@ grid-template-columns:1fr;
 
 </div>
 </section>
-
-<div id="history" style="display:none; margin-top:30px;">
-
-<h3>Project History</h3>
-
-<!-- ORIGINAL -->
-<div class="history-item">
-<h4>
-BALITBANG KEMHAN
-<button class="detail-btn" onclick="toggleProject('btk')">See Details</button>
-</h4>
-
-<div id="btk" class="project-detail">
-<p>
-F S L-Band Satelit<br>
-Kemadirian Satelit Pertahanan RI<br>
-Pengadaan Pengintegrasian System Pengendali Rudder/FIN Pada Roket Kaliber 122 mm<br>
-Desain dan Analisa Rancang Bangun Software Infra Red
-</p>
-
-<div class="image-grid">
-<img src="Assets/BTK(1).jpeg">
-<img src="Assets/BTK(2).jpeg">
-</div>
-
-<p class="desc">(Description Progress)</p>
-</div>
-</div>
-
-
-<!-- ADDED HISTORY -->
-
-<div class="history-item">
-<h4>LPP RRI <button class="detail-btn" onclick="toggleProject('p1')">See Details</button></h4>
-<div id="p1" style="display:none;">
-<ul><li>Pengadaan Mixer Console Studio DAB LPP RRI Jakarta Tahun Anggaran 2016</li></ul>
-<p><i>(Onsite Picture)</i></p>
-</div>
-</div>
-
-<div class="history-item">
-<h4>PT INFOKOM ELEKTRINDO <button class="detail-btn" onclick="toggleProject('p2')">See Details</button></h4>
-<div id="p2" style="display:none;">
-<ul><li>Perbaikan Spectrum Analyzer</li></ul>
-<p><i>(Onsite Picture)</i></p>
-</div>
-</div>
-
-<div class="history-item">
-<h4>PT JASNIKOM GEMANUSA <button class="detail-btn" onclick="toggleProject('p3')">See Details</button></h4>
-<div id="p3" style="display:none;">
-<ul>
-<li>Pengadaan Polycrystalline Solar Panel</li>
-<li>Perbaikan Painting Antenna Dish</li>
-</ul>
-<p><i>(Onsite Picture)</i></p>
-</div>
-</div>
-
-<div class="history-item">
-<h4>PT TELKOMINFRA <button class="detail-btn" onclick="toggleProject('p4')">See Details</button></h4>
-<div id="p4" style="display:none;">
-<ul>
-<li>Jasa Pembiayaan Operasional CDC CMIRA Area Sumatera</li>
-<li>MINI CME 7 Area Balinusra</li>
-<li>MINI CME 8 Area Balinusra</li>
-</ul>
-<p><i>(Onsite Picture)</i></p>
-</div>
-</div>
-
-<div class="history-item">
-<h4>PT INPRACOM TELESARANA <button class="detail-btn" onclick="toggleProject('p5')">See Details</button></h4>
-<div id="p5" style="display:none;">
-<ul><li>Perbaikan MITEC VSAT</li></ul>
-<p><i>(Onsite Picture)</i></p>
-</div>
-</div>
-
-<div class="history-item">
-<h4>MNC MEDIA <button class="detail-btn" onclick="toggleProject('p6')">See Details</button></h4>
-<div id="p6" style="display:none;">
-<ul><li>Instalasi Audio Studio Network MNC News Center</li></ul>
-<p><i>(Onsite Picture)</i></p>
-</div>
-</div>
-
-<div class="history-item">
-<h4>PT SAMPOERNA TI <button class="detail-btn" onclick="toggleProject('p7')">See Details</button></h4>
-<div id="p7" style="display:none;">
-<ul>
-<li>Perbaikan Modul BTS</li>
-<li>Perbaikan XCVR</li>
-<li>Rectifier & CMPA</li>
-<li>IDU & ODU</li>
-</ul>
-<p><i>(Onsite Picture)</i></p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-</section>
-
 
 <footer>
 
