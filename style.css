@@ -706,23 +706,6 @@ border-radius:8px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.logo img{
-height:85px;
-background:white;
-padding:10px 16px;
-border-radius:10px;
-}
-
-.logo img{
-height:70px;
-width:auto;
-
-background: rgba(255,255,255,0.95);
-padding:6px 10px;
-border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
 .detail-btn{
 background:#0b1f4b;
 color:#fff;
@@ -813,4 +796,87 @@ box-shadow:0 4px 12px rgba(0,0,0,0.1);
   border:1px solid #eee;
   box-shadow:0 4px 15px rgba(0,0,0,0.05);
   margin-top:15px;
+}
+
+.footer{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
+}
+
+@media(max-width:768px){
+.footer{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+.footer > div{
+width:100%;
+}
+
+.footer div div{
+flex-direction:column !important;
+gap:10px !important;
+}
+}
+
+.footer-address{
+display:flex;
+gap:50px;
+}
+
+@media(max-width:768px){
+.footer-address{
+flex-direction:column;
+gap:10px;
+align-items:center;
+}
+}
+
+.logo img{
+height:70px;
+width:auto;
+background:none !important;
+padding:0 !important;
+border-radius:0 !important;
+box-shadow:none !important;
+}
+/* ===== HEADER (soft sky) ===== */
+header{
+background:#e0f2fe !important; /* very light sky blue */
+color:#0f172a; /* dark text for contrast */
+}
+
+/* nav text */
+.nav a{
+color:#0f172a !important;
+font-weight:600;
+}
+
+.nav a:hover{
+color:#0284c7 !important;
+}
+
+
+/* ===== FOOTER ===== */
+footer{
+background:#bae6fd !important; /* slightly darker than header */
+color:#0f172a;
+}
+
+/* company name */
+footer h3{
+color:#0c4a6e;
+font-weight:700;
+}
+
+/* footer text */
+.footer p{
+color:#334155;
+}
+
+.copyright{
+color:#475569;
 }
