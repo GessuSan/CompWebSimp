@@ -1,1 +1,1 @@
-//window.location.href = "maintenance.html";
+window.location.href = "maintenance.html";
